@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tahini Lia Toss — Fabricação Própria | Lagoa da Conceição, Florianópolis</title>
+  <meta name="description" content="Tahini fabricado na Lia Toss, sem conservantes, com gergelim orgânico rastreável. O produto que nossos clientes levam toda semana — e que você vai procurar em todo lugar depois de experimentar.">
+  <link rel="canonical" href="https://liatoss.com.br/produtos/tahini.html">
+
+  <link rel="icon" type="image/jpeg" href="../images/favicon.jpg">
+  <link rel="apple-touch-icon" href="../images/favicon.jpg">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tahini Lia Toss — Fabricação Própria">
+  <meta property="og:description" content="Fabricado aqui, sem conservantes, com gergelim orgânico rastreável. O produto que nossos clientes levam toda semana.">
+  <meta property="og:image" content="https://liatoss.com.br/images/og-image.jpg">
+  <meta property="og:url" content="https://liatoss.com.br/produtos/tahini.html">
+  <meta property="og:locale" content="pt_BR">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .product-hero {
+      background: var(--color-bg-dark);
+      padding: 160px 0 100px;
+      position: relative;
+      overflow: hidden;
+    }
+    .product-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 70% 50%, rgba(196,154,54,0.12) 0%, transparent 60%);
+    }
+    .product-hero__inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    .product-hero__back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--color-gold);
+      margin-bottom: 32px;
+      transition: var(--transition);
+    }
+    .product-hero__back:hover { opacity: 0.75; }
+    .product-hero__back::before { content: '←'; font-size: 1rem; }
+    .product-hero__label {
+      font-family: var(--font-body);
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--color-gold);
+      display: block;
+      margin-bottom: 20px;
+    }
+    .product-hero__title {
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 500;
+      line-height: 1.1;
+      color: var(--color-white);
+      margin-bottom: 28px;
+    }
+    .product-hero__title em { color: var(--color-gold); font-style: italic; }
+    .product-hero__desc {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: rgba(255,255,255,0.75);
+      margin-bottom: 40px;
+    }
+    .product-hero__badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 40px;
+    }
+    .product-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border: 1px solid rgba(196,154,54,0.35);
+      border-radius: 100px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      color: var(--color-gold-light);
+      background: rgba(196,154,54,0.08);
+    }
+    .product-hero__visual {
+      border-radius: 4px;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      background: rgba(196,154,54,0.06);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(196,154,54,0.15);
+      font-size: 6rem;
+    }
+    .product-hero__visual img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .story {
+      background: var(--color-cream);
+      padding: var(--section-py) 0;
+    }
+    .story__inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+    .story__image {
+      border-radius: 4px;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      background: var(--color-cream-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 5rem;
+    }
+    .story__image img { width: 100%; height: 100%; object-fit: cover; }
+    .story__content h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      font-weight: 500;
+      color: var(--color-primary);
+      margin-bottom: 24px;
+      line-height: 1.2;
+    }
+    .story__content h2 em { color: var(--color-gold); font-style: italic; }
+    .story__content p {
+      color: var(--color-text-muted);
+      font-size: 0.95rem;
+      line-height: 1.9;
+      margin-bottom: 16px;
+    }
+    .story__content p strong { color: var(--color-primary); }
+    .story__highlight {
+      background: rgba(196,154,54,0.08);
+      border-left: 3px solid var(--color-gold);
+      padding: 20px 24px;
+      margin-top: 24px;
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 1.2rem;
+      color: var(--color-primary);
+      line-height: 1.5;
+    }
+
+    .ingredients {
+      background: var(--color-bg-dark);
+      padding: var(--section-py) 0;
+    }
+    .ingredients__header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    .ingredients__header h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      font-weight: 500;
+      color: var(--color-white);
+      margin-bottom: 16px;
+    }
+    .ingredients__header p { color: rgba(255,255,255,0.55); font-size: 0.95rem; }
+    .ingredients__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .ingredient-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(196,154,54,0.15);
+      border-radius: 4px;
+      padding: 32px 28px;
+    }
+    .ingredient-card__number {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      font-weight: 300;
+      color: var(--color-gold);
+      opacity: 0.5;
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+    .ingredient-card__title {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--color-cream);
+      margin-bottom: 8px;
+    }
+    .ingredient-card__desc {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.45);
+      line-height: 1.6;
+    }
+
+    .product-cta {
+      background: var(--color-cream);
+      padding: var(--section-py) 0;
+    }
+    .product-cta__inner {
+      text-align: center;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    .product-cta h2 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 3.5vw, 2.8rem);
+      font-weight: 500;
+      color: var(--color-primary);
+      margin-bottom: 16px;
+    }
+    .product-cta p {
+      color: var(--color-text-muted);
+      margin-bottom: 36px;
+      font-size: 0.95rem;
+    }
+    .product-cta__buttons {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .other-products {
+      background: var(--color-cream-dark);
+      padding: var(--section-py) 0;
+    }
+    .other-products h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 3vw, 2.4rem);
+      font-weight: 500;
+      color: var(--color-primary);
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    .other-products__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 16px;
+    }
+    .other-card {
+      background: var(--color-white);
+      border: 1px solid var(--color-border);
+      border-radius: 4px;
+      padding: 24px 20px;
+      text-align: center;
+      transition: var(--transition);
+      text-decoration: none;
+      display: block;
+    }
+    .other-card:hover {
+      border-color: var(--color-gold);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-sm);
+    }
+    .other-card__icon { font-size: 2rem; margin-bottom: 10px; display: block; }
+    .other-card__name {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: var(--color-primary);
+    }
+
+    @media (max-width: 992px) {
+      .product-hero__inner,
+      .story__inner { grid-template-columns: 1fr; gap: 48px; }
+      .product-hero { padding: 140px 0 80px; }
+      .ingredients__grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 768px) {
+      .ingredients__grid { grid-template-columns: 1fr; }
+      .product-cta__buttons { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="container">
+    <nav class="nav">
+      <a href="../index.html" class="nav__logo" aria-label="Lia Toss — Página inicial">
+        <div class="nav__logo-text">
+          Lia Toss
+          <span>Empório Orgânico</span>
+        </div>
+      </a>
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="../index.html#produtos" class="nav__link">Produtos</a></li>
+        <li><a href="../index.html#sobre" class="nav__link">Nossa história</a></li>
+        <li><a href="../index.html#por-que" class="nav__link">Por que a Lia Toss</a></li>
+        <li><a href="../index.html#faq" class="nav__link">Dúvidas</a></li>
+        <li><a href="../index.html#visitar" class="nav__link">Visitar</a></li>
+      </ul>
+      <a href="https://wa.me/5548000000000" class="btn btn--outline-light nav__cta" target="_blank" rel="noopener">
+        Falar pelo WhatsApp
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="product-hero">
+  <div class="container">
+    <div class="product-hero__inner">
+      <div class="product-hero__text">
+        <a href="../index.html#produtos" class="product-hero__back">Todos os produtos</a>
+        <span class="product-hero__label">Linha Lia Toss — Fabricação Própria</span>
+        <h1 class="product-hero__title">
+          Tahini<br>
+          <em>Lia Toss</em>
+        </h1>
+        <p class="product-hero__desc">
+          Fabricado aqui, sem conservantes, com gergelim orgânico rastreável.<br><br>
+          O produto que nossos clientes levam toda semana — e que você vai procurar em todo lugar depois de experimentar uma vez.
+        </p>
+        <div class="product-hero__badges">
+          <span class="product-badge">🌿 Orgânico Certificado</span>
+          <span class="product-badge">🚫 Sem Conservantes</span>
+          <span class="product-badge">📍 Gergelim Rastreável</span>
+          <span class="product-badge">✋ Fabricação Própria</span>
+        </div>
+        <a href="https://wa.me/5548000000000" class="btn btn--gold" target="_blank" rel="noopener">
+          Perguntar disponibilidade
+        </a>
+      </div>
+      <div class="product-hero__visual">
+        <img src="../images/produtos/tahini.webp" alt="Tahini Lia Toss — fabricado com gergelim orgânico rastreável" loading="eager" onerror="this.style.display='none'">
+        🫙
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HISTÓRIA DO PRODUTO -->
+<section class="story">
+  <div class="container">
+    <div class="story__inner">
+      <div class="story__image">
+        <img src="../images/produtos/tahini-processo.webp" alt="Processo de fabricação do Tahini Lia Toss" loading="lazy" onerror="this.style.display='none'">
+        🫙
+      </div>
+      <div class="story__content">
+        <span class="section-label reveal">O produto mais pedido da Lia Toss</span>
+        <h2 class="reveal reveal-delay-1">Você vai procurar<br>em <em>todo lugar</em> depois.</h2>
+        <p class="reveal reveal-delay-2">
+          Quando dizemos que nosso tahini é diferente, não é marketing. É porque <strong>fabricamos aqui</strong>, com gergelim orgânico que sabemos de onde veio, sem nenhum conservante, sem nenhum aditivo.
+        </p>
+        <p class="reveal reveal-delay-3">
+          O resultado é um produto com sabor, textura e pureza que o industrial simplesmente não consegue replicar. Por isso os nossos clientes levam toda semana.
+        </p>
+        <div class="story__highlight reveal reveal-delay-4">
+          "O produto que nossos clientes levam toda semana — e que você vai procurar em todo lugar depois de experimentar uma vez."
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- O QUE FAZ A DIFERENÇA -->
+<section class="ingredients">
+  <div class="container">
+    <div class="ingredients__header">
+      <span class="section-label reveal">O que faz a diferença</span>
+      <h2 class="reveal reveal-delay-1">Três ingredientes. Zero concessão.</h2>
+      <p class="reveal reveal-delay-2">É simples. É o que tem que ser. Sem mais.</p>
+    </div>
+    <div class="ingredients__grid">
+      <div class="ingredient-card reveal">
+        <div class="ingredient-card__number">01</div>
+        <div class="ingredient-card__title">Gergelim Orgânico Rastreável</div>
+        <div class="ingredient-card__desc">Sabemos de qual produtor veio, qual a procedência, qual o lote. Rastreabilidade real — não é discurso.</div>
+      </div>
+      <div class="ingredient-card reveal reveal-delay-1">
+        <div class="ingredient-card__number">02</div>
+        <div class="ingredient-card__title">Zero Conservantes</div>
+        <div class="ingredient-card__desc">Sem conservantes, sem estabilizantes, sem aditivos. O que você vê no rótulo é exatamente o que está dentro.</div>
+      </div>
+      <div class="ingredient-card reveal reveal-delay-2">
+        <div class="ingredient-card__number">03</div>
+        <div class="ingredient-card__title">Fabricação na Hora</div>
+        <div class="ingredient-card__desc">Produzido na cozinha da Lia Toss. Cozinha certificada organicamente. Processo artesanal — sem industrialização.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="product-cta">
+  <div class="container">
+    <div class="product-cta__inner">
+      <span class="section-label reveal">Uma vez você experimenta</span>
+      <h2 class="reveal reveal-delay-1">Disponível toda semana na Lia Toss.</h2>
+      <p class="reveal reveal-delay-2">Lagoa da Conceição, Florianópolis. Seg a Sáb.</p>
+      <div class="product-cta__buttons reveal reveal-delay-3">
+        <a href="https://wa.me/5548000000000" class="btn btn--gold" target="_blank" rel="noopener">Perguntar disponibilidade</a>
+        <a href="../index.html#visitar" class="btn btn--outline">Como chegar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUTROS PRODUTOS -->
+<section class="other-products">
+  <div class="container">
+    <h2>Outros produtos da linha própria</h2>
+    <div class="other-products__grid">
+      <a href="massas-frescas.html" class="other-card">
+        <span class="other-card__icon">🍝</span>
+        <span class="other-card__name">Massas Frescas</span>
+      </a>
+      <a href="bone-broth.html" class="other-card">
+        <span class="other-card__icon">🍲</span>
+        <span class="other-card__name">Bone Broth</span>
+      </a>
+      <a href="quiches.html" class="other-card">
+        <span class="other-card__icon">🥧</span>
+        <span class="other-card__name">Quiches Artesanais</span>
+      </a>
+      <a href="pratos-congelados.html" class="other-card">
+        <span class="other-card__icon">🧊</span>
+        <span class="other-card__name">Pratos Congelados</span>
+      </a>
+      <a href="pastas-molhos.html" class="other-card">
+        <span class="other-card__icon">🫒</span>
+        <span class="other-card__name">Pastas & Molhos</span>
+      </a>
+      <a href="padaria.html" class="other-card">
+        <span class="other-card__icon">🍞</span>
+        <span class="other-card__name">Padaria Funcional</span>
+      </a>
+      <a href="sobremesas.html" class="other-card">
+        <span class="other-card__icon">🍫</span>
+        <span class="other-card__name">Sobremesas Artesanais</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <div class="footer__logo-text">Lia Toss</div>
+        <div class="footer__logo-sub">Empório Orgânico & Natural</div>
+        <p class="footer__brand-desc">O único empório de Florianópolis que fabrica a própria linha de produtos orgânicos. Feito à mão. Rastreável. Certificado. Desde 2013.</p>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__col-title">Linha Própria</h4>
+        <ul>
+          <li><a href="massas-frescas.html">Massas Frescas</a></li>
+          <li><a href="tahini.html">Tahini Lia Toss</a></li>
+          <li><a href="bone-broth.html">Bone Broth</a></li>
+          <li><a href="quiches.html">Quiches Artesanais</a></li>
+          <li><a href="pratos-congelados.html">Pratos Congelados</a></li>
+          <li><a href="padaria.html">Padaria Funcional</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__col-title">Contato</h4>
+        <ul>
+          <li>📍 Lagoa da Conceição<br>Florianópolis — SC</li>
+          <li>📱 <a href="https://wa.me/5548000000000">WhatsApp</a></li>
+          <li>📸 <a href="https://instagram.com/liatoss" target="_blank" rel="noopener">@liatoss</a></li>
+          <li>⭐ 5,0 no Google</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2025 Lia Toss — Empório Orgânico & Natural. Todos os direitos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

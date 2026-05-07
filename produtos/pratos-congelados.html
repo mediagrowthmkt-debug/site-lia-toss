@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pratos Prontos Congelados — Lia Toss | Lagoa da Conceição, Florianópolis</title>
+  <meta name="description" content="Pratos prontos congelados Lia Toss — sopas funcionais, lasanhas, caldos nutritivos, refeições low carb, opções vegetarianas. Praticidade real para quem quer comer bem sem perder tempo.">
+  <link rel="canonical" href="https://liatoss.com.br/produtos/pratos-congelados.html">
+
+  <link rel="icon" type="image/jpeg" href="../images/favicon.jpg">
+  <link rel="apple-touch-icon" href="../images/favicon.jpg">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pratos Prontos Congelados — Lia Toss">
+  <meta property="og:description" content="Praticidade real para quem quer comer bem sem perder tempo. Sopas, lasanhas, caldos, low carb, vegetariano e vegano.">
+  <meta property="og:image" content="https://liatoss.com.br/images/og-image.jpg">
+  <meta property="og:url" content="https://liatoss.com.br/produtos/pratos-congelados.html">
+  <meta property="og:locale" content="pt_BR">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .product-hero {
+      background: var(--color-bg-dark); padding: 160px 0 100px; position: relative; overflow: hidden;
+    }
+    .product-hero::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 70% 50%, rgba(196,154,54,0.12) 0%, transparent 60%);
+    }
+    .product-hero__inner {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; position: relative; z-index: 1;
+    }
+    .product-hero__back {
+      display: inline-flex; align-items: center; gap: 8px; font-size: 0.75rem; font-weight: 600;
+      letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-gold);
+      margin-bottom: 32px; transition: var(--transition);
+    }
+    .product-hero__back:hover { opacity: 0.75; }
+    .product-hero__back::before { content: '←'; font-size: 1rem; }
+    .product-hero__label {
+      font-family: var(--font-body); font-size: 0.7rem; font-weight: 600; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--color-gold); display: block; margin-bottom: 20px;
+    }
+    .product-hero__title {
+      font-family: var(--font-display); font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 500; line-height: 1.1; color: var(--color-white); margin-bottom: 28px;
+    }
+    .product-hero__title em { color: var(--color-gold); font-style: italic; }
+    .product-hero__desc { font-size: 1.05rem; line-height: 1.8; color: rgba(255,255,255,0.75); margin-bottom: 40px; }
+    .product-hero__badges { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 40px; }
+    .product-badge {
+      display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px;
+      border: 1px solid rgba(196,154,54,0.35); border-radius: 100px;
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em;
+      color: var(--color-gold-light); background: rgba(196,154,54,0.08);
+    }
+    .product-hero__visual {
+      border-radius: 4px; overflow: hidden; aspect-ratio: 4/3; background: rgba(196,154,54,0.06);
+      display: flex; align-items: center; justify-content: center;
+      border: 1px solid rgba(196,154,54,0.15); font-size: 6rem;
+    }
+    .product-hero__visual img { width: 100%; height: 100%; object-fit: cover; }
+
+    .praticidade {
+      background: var(--color-cream); padding: var(--section-py) 0;
+    }
+    .praticidade__inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+    .praticidade__content h2 {
+      font-family: var(--font-display); font-size: clamp(2rem, 3.5vw, 2.8rem);
+      font-weight: 500; color: var(--color-primary); line-height: 1.2; margin-bottom: 24px;
+    }
+    .praticidade__content h2 em { color: var(--color-gold); font-style: italic; }
+    .praticidade__content p { color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.9; margin-bottom: 16px; }
+    .praticidade__content strong { color: var(--color-primary); }
+    .praticidade__visual {
+      border-radius: 4px; overflow: hidden; aspect-ratio: 4/3; background: var(--color-cream-dark);
+      display: flex; align-items: center; justify-content: center; font-size: 6rem;
+    }
+    .praticidade__visual img { width: 100%; height: 100%; object-fit: cover; }
+
+    .cardapio {
+      background: var(--color-bg-dark); padding: var(--section-py) 0;
+    }
+    .cardapio__header { text-align: center; margin-bottom: 60px; }
+    .cardapio__header h2 {
+      font-family: var(--font-display); font-size: clamp(2rem, 3.5vw, 2.8rem);
+      font-weight: 500; color: var(--color-white); margin-bottom: 12px;
+    }
+    .cardapio__header p { color: rgba(255,255,255,0.5); font-size: 0.9rem; }
+    .cardapio__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+    .cardapio-item {
+      background: rgba(255,255,255,0.03); border: 1px solid rgba(196,154,54,0.12);
+      border-radius: 4px; padding: 32px 28px; transition: var(--transition);
+    }
+    .cardapio-item:hover { border-color: rgba(196,154,54,0.35); background: rgba(196,154,54,0.04); }
+    .cardapio-item__icon { font-size: 2.5rem; margin-bottom: 16px; }
+    .cardapio-item__name {
+      font-family: var(--font-display); font-size: 1.3rem; font-weight: 500;
+      color: var(--color-cream); margin-bottom: 8px;
+    }
+    .cardapio-item__desc { font-size: 0.82rem; color: rgba(255,255,255,0.45); line-height: 1.7; }
+    .cardapio-item__tag {
+      display: inline-block; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--color-gold); background: rgba(196,154,54,0.1);
+      padding: 3px 10px; border-radius: 100px; margin-top: 12px;
+    }
+
+    .product-cta { background: var(--color-cream); padding: var(--section-py) 0; }
+    .product-cta__inner { text-align: center; max-width: 640px; margin: 0 auto; }
+    .product-cta h2 {
+      font-family: var(--font-display); font-size: clamp(2rem, 3.5vw, 2.8rem);
+      font-weight: 500; color: var(--color-primary); margin-bottom: 16px;
+    }
+    .product-cta p { color: var(--color-text-muted); margin-bottom: 36px; font-size: 0.95rem; }
+    .product-cta__buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+    .other-products { background: var(--color-cream-dark); padding: var(--section-py) 0; }
+    .other-products h2 {
+      font-family: var(--font-display); font-size: clamp(1.8rem, 3vw, 2.4rem);
+      font-weight: 500; color: var(--color-primary); margin-bottom: 40px; text-align: center;
+    }
+    .other-products__grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; }
+    .other-card {
+      background: var(--color-white); border: 1px solid var(--color-border); border-radius: 4px;
+      padding: 24px 20px; text-align: center; transition: var(--transition); text-decoration: none; display: block;
+    }
+    .other-card:hover { border-color: var(--color-gold); transform: translateY(-3px); box-shadow: var(--shadow-sm); }
+    .other-card__icon { font-size: 2rem; margin-bottom: 10px; display: block; }
+    .other-card__name { font-family: var(--font-display); font-size: 1.1rem; font-weight: 500; color: var(--color-primary); }
+
+    @media (max-width: 992px) {
+      .product-hero__inner, .praticidade__inner { grid-template-columns: 1fr; gap: 48px; }
+      .product-hero { padding: 140px 0 80px; }
+    }
+    @media (max-width: 768px) {
+      .product-cta__buttons { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="container">
+    <nav class="nav">
+      <a href="../index.html" class="nav__logo" aria-label="Lia Toss — Página inicial">
+        <div class="nav__logo-text">Lia Toss<span>Empório Orgânico</span></div>
+      </a>
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="../index.html#produtos" class="nav__link">Produtos</a></li>
+        <li><a href="../index.html#sobre" class="nav__link">Nossa história</a></li>
+        <li><a href="../index.html#por-que" class="nav__link">Por que a Lia Toss</a></li>
+        <li><a href="../index.html#faq" class="nav__link">Dúvidas</a></li>
+        <li><a href="../index.html#visitar" class="nav__link">Visitar</a></li>
+      </ul>
+      <a href="https://wa.me/5548000000000" class="btn btn--outline-light nav__cta" target="_blank" rel="noopener">Falar pelo WhatsApp</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    </nav>
+  </div>
+</header>
+
+<section class="product-hero">
+  <div class="container">
+    <div class="product-hero__inner">
+      <div class="product-hero__text">
+        <a href="../index.html#produtos" class="product-hero__back">Todos os produtos</a>
+        <span class="product-hero__label">Linha Lia Toss — Fabricação Própria</span>
+        <h1 class="product-hero__title">Pratos Prontos<br><em>Congelados</em></h1>
+        <p class="product-hero__desc">
+          Sopas funcionais, lasanhas completas, caldos nutritivos, refeições low carb. Opções vegetarianas e veganas.<br><br>
+          Praticidade real para quem quer comer bem sem perder tempo.
+        </p>
+        <div class="product-hero__badges">
+          <span class="product-badge">⚡ Praticidade Real</span>
+          <span class="product-badge">🌿 Ingredientes Orgânicos</span>
+          <span class="product-badge">🥗 Low Carb disponível</span>
+          <span class="product-badge">🌱 Vegetariano e Vegano</span>
+          <span class="product-badge">✋ Produção Própria</span>
+        </div>
+        <a href="https://wa.me/5548000000000" class="btn btn--gold" target="_blank" rel="noopener">Perguntar disponibilidade</a>
+      </div>
+      <div class="product-hero__visual">
+        <img src="../images/produtos/pratos-congelados.webp" alt="Pratos prontos congelados Lia Toss — sopas, lasanhas e refeições saudáveis" loading="eager" onerror="this.style.display='none'">
+        🧊
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="praticidade">
+  <div class="container">
+    <div class="praticidade__inner">
+      <div class="praticidade__content">
+        <span class="section-label reveal">Praticidade que não compromete</span>
+        <h2 class="reveal reveal-delay-1">Comer bem sem<br>perder <em>tempo.</em></h2>
+        <p class="reveal reveal-delay-2">
+          Nossos pratos congelados não são uma concessão. <strong>São uma extensão da nossa cozinha</strong> — feitos com os mesmos ingredientes orgânicos, o mesmo cuidado de preparo, a mesma certificação.
+        </p>
+        <p class="reveal reveal-delay-3">
+          A diferença está no que está dentro. Sem industrialização. Sem conservantes artificiais. Só comida de verdade, pronta para quando você precisar.
+        </p>
+      </div>
+      <div class="praticidade__visual">
+        <img src="../images/produtos/pratos-congelados-detalhe.webp" alt="Pratos prontos congelados em detalhe" loading="lazy" onerror="this.style.display='none'">
+        🥗
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cardapio">
+  <div class="container">
+    <div class="cardapio__header">
+      <span class="section-label reveal">O que você encontra</span>
+      <h2 class="reveal reveal-delay-1">Cardápio completo. Orgânico do começo ao fim.</h2>
+      <p class="reveal reveal-delay-2">Cada opção fabricada na nossa cozinha — com ingrediente rastreável e zero compromisso com o saudável.</p>
+    </div>
+    <div class="cardapio__grid">
+      <div class="cardapio-item reveal">
+        <div class="cardapio-item__icon">🍵</div>
+        <div class="cardapio-item__name">Sopas Funcionais</div>
+        <div class="cardapio-item__desc">Receitas desenvolvidas para nutrir — ingredientes orgânicos, temperos naturais, sem sódio excessivo.</div>
+        <span class="cardapio-item__tag">Funcional</span>
+      </div>
+      <div class="cardapio-item reveal reveal-delay-1">
+        <div class="cardapio-item__icon">🍝</div>
+        <div class="cardapio-item__name">Lasanhas Completas</div>
+        <div class="cardapio-item__desc">Com as mesmas massas artesanais da linha própria — montadas, temperadas, prontas para aquecer.</div>
+        <span class="cardapio-item__tag">Artesanal</span>
+      </div>
+      <div class="cardapio-item reveal reveal-delay-2">
+        <div class="cardapio-item__icon">🍲</div>
+        <div class="cardapio-item__name">Caldos Nutritivos</div>
+        <div class="cardapio-item__desc">Base para sopas, risotos ou para beber puro — feito com ingredientes orgânicos e slow-cooking artesanal.</div>
+        <span class="cardapio-item__tag">Nutritivo</span>
+      </div>
+      <div class="cardapio-item reveal">
+        <div class="cardapio-item__icon">🥗</div>
+        <div class="cardapio-item__name">Refeições Low Carb</div>
+        <div class="cardapio-item__desc">Opções desenvolvidas para dietas com baixo carboidrato — sem abrir mão do sabor e da origem orgânica.</div>
+        <span class="cardapio-item__tag">Low Carb</span>
+      </div>
+      <div class="cardapio-item reveal reveal-delay-1">
+        <div class="cardapio-item__icon">🌱</div>
+        <div class="cardapio-item__name">Opções Vegetarianas</div>
+        <div class="cardapio-item__desc">Refeições completas sem carne — com legumes orgânicos, proteínas vegetais, sabor real.</div>
+        <span class="cardapio-item__tag">Vegetariano</span>
+      </div>
+      <div class="cardapio-item reveal reveal-delay-2">
+        <div class="cardapio-item__icon">🌿</div>
+        <div class="cardapio-item__name">Opções Veganas</div>
+        <div class="cardapio-item__desc">100% vegetais — certificação orgânica, ingredientes rastreados, preparação artesanal.</div>
+        <span class="cardapio-item__tag">Vegano</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="product-cta">
+  <div class="container">
+    <div class="product-cta__inner">
+      <span class="section-label reveal">Disponível na Lia Toss</span>
+      <h2 class="reveal reveal-delay-1">Sua semana mais saudável começa aqui.</h2>
+      <p class="reveal reveal-delay-2">Lagoa da Conceição, Florianópolis. Seg a Sáb.</p>
+      <div class="product-cta__buttons reveal reveal-delay-3">
+        <a href="https://wa.me/5548000000000" class="btn btn--gold" target="_blank" rel="noopener">Perguntar disponibilidade</a>
+        <a href="../index.html#visitar" class="btn btn--outline">Como chegar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="other-products">
+  <div class="container">
+    <h2>Outros produtos da linha própria</h2>
+    <div class="other-products__grid">
+      <a href="massas-frescas.html" class="other-card"><span class="other-card__icon">🍝</span><span class="other-card__name">Massas Frescas</span></a>
+      <a href="tahini.html" class="other-card"><span class="other-card__icon">🫙</span><span class="other-card__name">Tahini Lia Toss</span></a>
+      <a href="bone-broth.html" class="other-card"><span class="other-card__icon">🍲</span><span class="other-card__name">Bone Broth</span></a>
+      <a href="quiches.html" class="other-card"><span class="other-card__icon">🥧</span><span class="other-card__name">Quiches Artesanais</span></a>
+      <a href="pastas-molhos.html" class="other-card"><span class="other-card__icon">🫒</span><span class="other-card__name">Pastas & Molhos</span></a>
+      <a href="padaria.html" class="other-card"><span class="other-card__icon">🍞</span><span class="other-card__name">Padaria Funcional</span></a>
+      <a href="sobremesas.html" class="other-card"><span class="other-card__icon">🍫</span><span class="other-card__name">Sobremesas Artesanais</span></a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <div class="footer__logo-text">Lia Toss</div>
+        <div class="footer__logo-sub">Empório Orgânico & Natural</div>
+        <p class="footer__brand-desc">O único empório de Florianópolis que fabrica a própria linha de produtos orgânicos. Feito à mão. Rastreável. Certificado. Desde 2013.</p>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__col-title">Linha Própria</h4>
+        <ul>
+          <li><a href="massas-frescas.html">Massas Frescas</a></li>
+          <li><a href="tahini.html">Tahini Lia Toss</a></li>
+          <li><a href="bone-broth.html">Bone Broth</a></li>
+          <li><a href="quiches.html">Quiches Artesanais</a></li>
+          <li><a href="pratos-congelados.html">Pratos Congelados</a></li>
+          <li><a href="padaria.html">Padaria Funcional</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__col-title">Contato</h4>
+        <ul>
+          <li>📍 Lagoa da Conceição<br>Florianópolis — SC</li>
+          <li>📱 <a href="https://wa.me/5548000000000">WhatsApp</a></li>
+          <li>📸 <a href="https://instagram.com/liatoss" target="_blank" rel="noopener">@liatoss</a></li>
+          <li>⭐ 5,0 no Google</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2025 Lia Toss — Empório Orgânico & Natural. Todos os direitos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
