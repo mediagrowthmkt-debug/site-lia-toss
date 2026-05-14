@@ -3,19 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sobremesas Artesanais — Lia Toss | Porto da Lagoa, Florianópolis</title>
-  <meta name="description" content="Sobremesas da Lia Toss: cookie orgânico e broa de milho de produção própria. Doces da nossa cozinha — feitos com ingredientes que você reconhece.">
-  <link rel="canonical" href="https://liatoss.com.br/produtos/sobremesas.html">
-
+  <title>Massas Artesanais Congeladas Lia Toss — Ravioli, Lasanha, Spaghetti | Porto da Lagoa</title>
+  <meta name="description" content="Massas artesanais congeladas Lia Toss: ravioli, lasanha, tagliatelle, spaghetti (inclusive integral e de orapro-nóbis). O congelamento é nosso único conservante.">
+  <link rel="canonical" href="https://liatoss.com.br/produtos/massas-congeladas.html">
   <link rel="icon" type="image/jpeg" href="../images/favicon.jpg">
   <link rel="apple-touch-icon" href="../images/favicon.jpg">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Sobremesas Artesanais — Lia Toss">
-  <meta property="og:description" content="Cookie orgânico e broa de milho de produção própria. Doces da nossa cozinha — feitos com ingredientes que você reconhece.">
-  <meta property="og:image" content="https://liatoss.com.br/images/og-image.jpg">
-  <meta property="og:url" content="https://liatoss.com.br/produtos/sobremesas.html">
-  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Massas Artesanais Congeladas Lia Toss">
+  <meta property="og:description" content="Ravioli, lasanha, spaghetti integral e de orapro-nóbis. Feitos à mão e congelados — único conservante natural.">
+  <meta property="og:url" content="https://liatoss.com.br/produtos/massas-congeladas.html">
 
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,57 +20,43 @@
 
   <link rel="stylesheet" href="../css/style.css">
   <style>
-    .product-hero {
-      background: var(--color-bg-dark); padding: 160px 0 100px; position: relative; overflow: hidden;
-    }
-    .product-hero::before {
-      content: ''; position: absolute; inset: 0;
-      background: radial-gradient(ellipse at 70% 50%, rgba(196,154,54,0.12) 0%, transparent 60%);
-    }
+    .product-hero { background: var(--color-bg-dark); padding: 160px 0 100px; position: relative; overflow: hidden; }
+    .product-hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 70% 50%, rgba(196,154,54,0.12) 0%, transparent 60%); }
     .product-hero__inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; position: relative; z-index: 1; }
     .product-hero__back { display: inline-flex; align-items: center; gap: 8px; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-gold); margin-bottom: 32px; transition: var(--transition); }
     .product-hero__back:hover { opacity: 0.75; }
     .product-hero__back::before { content: '←'; font-size: 1rem; }
-    .product-hero__label { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-gold); display: block; margin-bottom: 20px; }
+    .product-hero__label { font-family: var(--font-body); font-size: 0.7rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-gold); display: block; margin-bottom: 20px; }
     .product-hero__title { font-family: var(--font-display); font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 500; line-height: 1.1; color: var(--color-white); margin-bottom: 28px; }
     .product-hero__title em { color: var(--color-gold); font-style: italic; }
     .product-hero__desc { font-size: 1.05rem; line-height: 1.8; color: rgba(255,255,255,0.75); margin-bottom: 40px; }
     .product-hero__badges { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 40px; }
-    .product-badge { padding: 6px 14px; border: 1px solid rgba(196,154,54,0.35); border-radius: 100px; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; color: var(--color-gold-light); background: rgba(196,154,54,0.08); }
+    .product-badge { display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border: 1px solid rgba(196,154,54,0.35); border-radius: 100px; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; color: var(--color-gold-light); background: rgba(196,154,54,0.08); }
     .product-hero__visual { border-radius: 4px; overflow: hidden; aspect-ratio: 4/3; background: rgba(196,154,54,0.06); display: flex; align-items: center; justify-content: center; border: 1px solid rgba(196,154,54,0.15); font-size: 6rem; }
     .product-hero__visual img { width: 100%; height: 100%; object-fit: cover; }
-
-    .lineup { background: var(--color-cream); padding: var(--section-py) 0; }
-    .lineup__header { text-align: center; margin-bottom: 60px; }
-    .lineup__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; }
-    .lineup-card { background: var(--color-white); border: 1px solid var(--color-border); border-radius: 4px; padding: 32px 24px; transition: var(--transition); }
-    .lineup-card:hover { border-color: var(--color-gold); box-shadow: var(--shadow-md); transform: translateY(-4px); }
-    .lineup-card__icon { font-size: 2.8rem; margin-bottom: 16px; }
-    .lineup-card__name { font-family: var(--font-display); font-size: 1.35rem; font-weight: 500; color: var(--color-primary); margin-bottom: 10px; }
-    .lineup-card__desc { font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.7; }
-
-    .paradoxo {
-      background: var(--color-bg-dark); padding: var(--section-py) 0;
-    }
-    .paradoxo__inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
-    .paradoxo__content h2 { font-family: var(--font-display); font-size: clamp(2rem, 3.5vw, 2.8rem); font-weight: 500; color: var(--color-white); line-height: 1.2; margin-bottom: 24px; }
-    .paradoxo__content h2 em { color: var(--color-gold); font-style: italic; }
-    .paradoxo__content p { color: rgba(255,255,255,0.6); font-size: 0.95rem; line-height: 1.9; margin-bottom: 20px; }
-    .paradoxo__content strong { color: var(--color-cream); }
-    .paradoxo__lista { display: flex; flex-direction: column; gap: 14px; margin-top: 28px; }
-    .paradoxo__item { display: flex; align-items: center; gap: 12px; font-size: 0.87rem; color: rgba(255,255,255,0.6); }
-    .paradoxo__item::before { content: '✓'; color: var(--color-gold); font-weight: 700; flex-shrink: 0; }
-    .paradoxo__item strong { color: var(--color-cream); }
-    .paradoxo__quote { background: rgba(196,154,54,0.08); border: 1px solid rgba(196,154,54,0.2); border-radius: 4px; padding: 48px 40px; }
-    .paradoxo__quote blockquote { font-family: var(--font-display); font-size: 1.8rem; font-style: italic; color: var(--color-cream); line-height: 1.4; margin-bottom: 24px; }
-    .paradoxo__quote cite { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--color-gold); font-style: normal; }
-
+    .story { background: var(--color-cream); padding: var(--section-py) 0; }
+    .story__inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+    .story__image { border-radius: 4px; overflow: hidden; aspect-ratio: 4/3; background: var(--color-cream-dark); display: flex; align-items: center; justify-content: center; font-size: 5rem; }
+    .story__image img { width: 100%; height: 100%; object-fit: cover; }
+    .story__content h2 { font-family: var(--font-display); font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 500; color: var(--color-primary); margin-bottom: 24px; line-height: 1.2; }
+    .story__content h2 em { color: var(--color-gold); font-style: italic; }
+    .story__content p { color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.9; margin-bottom: 16px; }
+    .story__content p strong { color: var(--color-primary); }
+    .story__highlight { background: rgba(196,154,54,0.08); border-left: 3px solid var(--color-gold); padding: 20px 24px; margin-top: 24px; font-family: var(--font-display); font-style: italic; font-size: 1.2rem; color: var(--color-primary); line-height: 1.5; }
+    .ingredients { background: var(--color-bg-dark); padding: var(--section-py) 0; }
+    .ingredients__header { text-align: center; margin-bottom: 60px; }
+    .ingredients__header h2 { font-family: var(--font-display); font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 500; color: var(--color-white); margin-bottom: 16px; }
+    .ingredients__header p { color: rgba(255,255,255,0.55); font-size: 0.95rem; }
+    .ingredients__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .ingredient-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(196,154,54,0.15); border-radius: 4px; padding: 32px 28px; }
+    .ingredient-card__number { font-family: var(--font-display); font-size: 2.5rem; font-weight: 300; color: var(--color-gold); opacity: 0.5; line-height: 1; margin-bottom: 12px; }
+    .ingredient-card__title { font-weight: 600; font-size: 0.9rem; color: var(--color-cream); margin-bottom: 8px; }
+    .ingredient-card__desc { font-size: 0.82rem; color: rgba(255,255,255,0.45); line-height: 1.6; }
     .product-cta { background: var(--color-cream); padding: var(--section-py) 0; }
     .product-cta__inner { text-align: center; max-width: 640px; margin: 0 auto; }
     .product-cta h2 { font-family: var(--font-display); font-size: clamp(2rem, 3.5vw, 2.8rem); font-weight: 500; color: var(--color-primary); margin-bottom: 16px; }
     .product-cta p { color: var(--color-text-muted); margin-bottom: 36px; font-size: 0.95rem; }
     .product-cta__buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
-
     .other-products { background: var(--color-cream-dark); padding: var(--section-py) 0; }
     .other-products h2 { font-family: var(--font-display); font-size: clamp(1.8rem, 3vw, 2.4rem); font-weight: 500; color: var(--color-primary); margin-bottom: 40px; text-align: center; }
     .other-products__grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; }
@@ -81,12 +64,15 @@
     .other-card:hover { border-color: var(--color-gold); transform: translateY(-3px); box-shadow: var(--shadow-sm); }
     .other-card__icon { font-size: 2rem; margin-bottom: 10px; display: block; }
     .other-card__name { font-family: var(--font-display); font-size: 1.1rem; font-weight: 500; color: var(--color-primary); }
-
     @media (max-width: 992px) {
-      .product-hero__inner, .paradoxo__inner { grid-template-columns: 1fr; gap: 48px; }
+      .product-hero__inner, .story__inner { grid-template-columns: 1fr; gap: 48px; }
       .product-hero { padding: 140px 0 80px; }
+      .ingredients__grid { grid-template-columns: repeat(2, 1fr); }
     }
-    @media (max-width: 768px) { .product-cta__buttons { flex-direction: column; align-items: center; } }
+    @media (max-width: 768px) {
+      .ingredients__grid { grid-template-columns: 1fr; }
+      .product-cta__buttons { flex-direction: column; align-items: center; }
+    }
   </style>
 </head>
 <body>
@@ -94,9 +80,7 @@
 <header class="header" id="header">
   <div class="container">
     <nav class="nav">
-      <a href="../index.html" class="nav__logo" aria-label="Lia Toss — Página inicial">
-        <img src="../images/logo-lia-toss.webp" alt="Lia Toss Emporium Orgânico" width="120" height="120">
-      </a>
+      <a href="../index.html" class="nav__logo"><img src="../images/logo-lia-toss.webp" alt="Lia Toss Emporium Orgânico" width="120" height="120"></a>
       <ul class="nav__menu" id="navMenu">
         <li><a href="../index.html#produtos" class="nav__link">Produtos</a></li>
         <li><a href="../nossa-historia.html" class="nav__link">Nossa História</a></li>
@@ -117,78 +101,73 @@
       <div class="product-hero__text">
         <a href="../index.html#produtos" class="product-hero__back">Todos os produtos</a>
         <span class="product-hero__label">Linha Lia Toss — Fabricação Própria</span>
-        <h1 class="product-hero__title">Sobremesas<br><em>Artesanais</em></h1>
+        <h1 class="product-hero__title">Massas Artesanais<br><em>Congeladas.</em></h1>
         <p class="product-hero__desc">
-          Cookie orgânico e broa de milho — produção própria.<br><br>
-          Para quem quer doce sem abrir mão do saudável.
+          Ravioli, lasanha, tagliatelle, spaghetti — inclusive nas <strong>versões integrais</strong> e <strong>spaghetti de orapro-nóbis</strong>.<br><br>
+          Feitas à mão e congeladas imediatamente. O <strong>congelamento é nosso único conservante</strong>: zero aditivo químico, zero estabilizante. Você descongela e tem massa fresca do mesmo dia da fabricação.
         </p>
         <div class="product-hero__badges">
-          <span class="product-badge"><svg class="emoji-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="9" cy="10" r="1"/><circle cx="14" cy="13" r="1"/><circle cx="11" cy="15" r="0.6"/><circle cx="15" cy="9" r="0.6"/></svg> Cookie Orgânico</span>
-          <span class="product-badge"><svg class="emoji-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21c0-8 5-15 14-16-1 9-7 15-14 16Z"/><path d="M12 12c-2 2-4 5-7 9"/></svg> Orgânico Certificado</span>
-          <span class="product-badge"><svg class="emoji-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2c3 3 4 7 4 12s-2 8-4 8-4-3-4-8 1-9 4-12Z"/><path d="M8 8c-2 1-3 3-3 5M16 8c2 1 3 3 3 5"/></svg> Broa de Milho</span>
-          <span class="product-badge"><svg class="emoji-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11V5a2 2 0 0 1 4 0v6"/><path d="M13 9V4a2 2 0 0 1 4 0v9"/><path d="M17 8a2 2 0 0 1 4 0v8a6 6 0 0 1-12 0v-7a2 2 0 0 1 4 0"/></svg> Produção Própria</span>
+          <span class="product-badge"><svg class="emoji-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M2 12h20M5 5l14 14M5 19 19 5"/><path d="M9 4l3 2 3-2M9 20l3-2 3 2M4 9l2 3-2 3M20 9l-2 3 2 3"/></svg> Único Conservante: Frio</span>
+          <span class="product-badge"><svg class="emoji-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6 18.4 18.4"/></svg> Sem Conservantes</span>
+          <span class="product-badge"><svg class="emoji-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22V8"/><path d="M12 8c-2-2-4-2-4-4 2 0 4 0 4 2M12 8c2-2 4-2 4-4-2 0-4 0-4 2M12 12c-2-2-4-2-4-4 2 0 4 0 4 2M12 12c2-2 4-2 4-4-2 0-4 0-4 2M12 16c-2-2-4-2-4-4 2 0 4 0 4 2M12 16c2-2 4-2 4-4-2 0-4 0-4 2"/></svg> Versões Integrais</span>
+          <span class="product-badge"><svg class="emoji-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21c0-9 6-16 15-17-1 10-7 16-15 17Z"/><path d="M12 13c-2 1-4 3-7 8"/></svg> Spaghetti de Orapro-nóbis</span>
         </div>
         <a href="https://wa.me/5548996890089" class="btn btn--gold" target="_blank" rel="noopener">Perguntar disponibilidade</a>
       </div>
       <div class="product-hero__visual">
-        <img src="../images/produtos/sobremesas.webp" alt="Sobremesas artesanais Lia Toss — cookie orgânico e broa de milho" loading="eager" onerror="this.style.display='none'">
-        <svg class="emoji-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="16" rx="1.5"/><path d="M5 9h14M5 14h14M5 19h14M10 4v16M14 4v16"/></svg>
+        <img src="../images/produtos/massas-congeladas.webp" alt="Massas artesanais congeladas Lia Toss" loading="eager" onerror="this.style.display='none'">
+        <svg class="emoji-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14h16M4 14a8 8 0 0 1 16 0M5 14l1 4a2 2 0 0 0 2 1.5h8a2 2 0 0 0 2-1.5l1-4"/><path d="M9 7c0-1.5 1-2.5 2-1.5M13 6c.5-1.5 1.5-1.5 2 0M11 5c0-1 1-1.5 1.5-.5"/></svg>
       </div>
     </div>
   </div>
 </section>
 
-<section class="lineup">
+<section class="story">
   <div class="container">
-    <div class="lineup__header">
-      <span class="section-label reveal">O que você encontra</span>
-      <h2 class="section-title reveal reveal-delay-1">Doce que não é mentira.</h2>
-      <p class="section-subtitle reveal reveal-delay-2">Da nossa cozinha, com ingredientes que você reconhece. Apenas dois itens — feitos com cuidado.</p>
-    </div>
-    <div class="lineup__grid">
-      <div class="lineup-card reveal">
-        <div class="lineup-card__icon"><svg class="emoji-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="16" rx="1.5"/><path d="M5 9h14M5 14h14M5 19h14M10 4v16M14 4v16"/></svg></div>
-        <div class="lineup-card__name">Broa de Milho</div>
-        <div class="lineup-card__desc">Broa de milho tradicional, com fubá selecionado. Aquele gostinho de casa, feita aqui mesmo na cozinha da Lia Toss.</div>
+    <div class="story__inner">
+      <div class="story__image">
+        <img src="../images/produtos/massas-processo.webp" alt="Fabricação das massas artesanais Lia Toss" loading="lazy" onerror="this.style.display='none'">
+        <svg class="emoji-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14h16M4 14a8 8 0 0 1 16 0M5 14l1 4a2 2 0 0 0 2 1.5h8a2 2 0 0 0 2-1.5l1-4"/><path d="M9 7c0-1.5 1-2.5 2-1.5M13 6c.5-1.5 1.5-1.5 2 0M11 5c0-1 1-1.5 1.5-.5"/></svg>
       </div>
-      <div class="lineup-card reveal reveal-delay-1">
-        <div class="lineup-card__icon"><svg class="emoji-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="9" cy="10" r="1"/><circle cx="14" cy="13" r="1"/><circle cx="11" cy="15" r="0.6"/><circle cx="15" cy="9" r="0.6"/></svg></div>
-        <div class="lineup-card__name">Cookies Orgânicos</div>
-        <div class="lineup-card__desc">Farinha orgânica, adoçado naturalmente, sem conservantes. Aquele cookie que parece caseiro — porque é.</div>
-      </div>
-      <div class="lineup-card reveal reveal-delay-2">
-        <div class="lineup-card__icon"><svg class="emoji-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11h18a9 9 0 0 1-18 0Z"/><path d="M7 8c-.5-2 1-3 2-2M11 7c0-2 2-3 3-1M16 8c.5-2-1-3-2-2"/></svg></div>
-        <div class="lineup-card__name">Outras Sobremesas no Emporium</div>
-        <div class="lineup-card__desc">No Emporium temos brownies, bolos, doces sem açúcar refinado e opções funcionais de marcas selecionadas. Nossa linha própria é só cookie e broa — feitos aqui.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="paradoxo">
-  <div class="container">
-    <div class="paradoxo__inner">
-      <div class="paradoxo__content">
-        <span class="section-label reveal">O paradoxo resolvido</span>
-        <h2 class="reveal reveal-delay-1">Doce <em>e</em> saudável.<br>Ao mesmo tempo.</h2>
+      <div class="story__content">
+        <span class="section-label reveal">Massa fresca, congelada na hora certa</span>
+        <h2 class="reveal reveal-delay-1">Por que <em>congeladas?</em><br>Porque é assim que mantém fresco.</h2>
         <p class="reveal reveal-delay-2">
-          A maioria das "sobremesas saudáveis" do mercado é mentira disfarçada de saudável. <strong>Ingredientes funcionais na frente do rótulo, açúcar e conservante atrás.</strong>
+          As nossas massas são feitas à mão e <strong>congeladas imediatamente após a produção</strong>. Esse é o único "conservante" que usamos — o frio. Sem aditivo químico, sem estabilizante, sem o sódio das massas industriais.
         </p>
         <p class="reveal reveal-delay-3">
-          As nossas são feitas aqui, com cacau orgânico, farinhas sem glúten quando necessário, adoçantes naturais e zero conservante. O sabor que surpreende — porque é real.
+          Quando você descongela, está comendo a mesma massa que saiu da nossa cozinha no dia da fabricação. <strong>Ravioli, lasanha, tagliatelle e spaghetti</strong> — também em versões integrais e na nossa especialidade: <strong>spaghetti de orapro-nóbis</strong>.
         </p>
-        <div class="paradoxo__lista reveal reveal-delay-4">
-          <div class="paradoxo__item"><strong>Cacau orgânico rastreável</strong> — não o cacau em pó industrial processado</div>
-          <div class="paradoxo__item"><strong>Adoçantes naturais</strong> — tâmara, mel orgânico, coco açucarado quando aplicável</div>
-          <div class="paradoxo__item"><strong>Farinhas funcionais</strong> — amêndoa, coco, arroz integral orgânico</div>
-          <div class="paradoxo__item"><strong>Zero conservante</strong> — feito para consumo fresco, não para prateleira</div>
+        <div class="story__highlight reveal reveal-delay-4">
+          "Fresco quando você compra. Fresco quando você come."
         </div>
       </div>
-      <div class="paradoxo__quote reveal reveal-delay-1">
-        <blockquote>
-          "Para quem quer doce sem abrir mão do saudável."
-        </blockquote>
-        <cite>Lia Toss — Emporium Orgânico Certificado</cite>
+    </div>
+  </div>
+</section>
+
+<section class="ingredients">
+  <div class="container">
+    <div class="ingredients__header">
+      <span class="section-label reveal">O que faz a diferença</span>
+      <h2 class="reveal reveal-delay-1">Variedade real. Sem conservante.</h2>
+      <p class="reveal reveal-delay-2">Sem mistério, sem química de prateleira.</p>
+    </div>
+    <div class="ingredients__grid">
+      <div class="ingredient-card reveal">
+        <div class="ingredient-card__number">01</div>
+        <div class="ingredient-card__title">Ravioli & Lasanha</div>
+        <div class="ingredient-card__desc">Recheios variados, massa feita à mão. Inclui também versões integrais. Você descongela e prepara como se fosse fresca do dia.</div>
+      </div>
+      <div class="ingredient-card reveal reveal-delay-1">
+        <div class="ingredient-card__number">02</div>
+        <div class="ingredient-card__title">Spaghetti & Tagliatelle</div>
+        <div class="ingredient-card__desc">Inclui versões integrais. Massa tradicional, feita aqui — não vem em pacote, não vem do industrial.</div>
+      </div>
+      <div class="ingredient-card reveal reveal-delay-2">
+        <div class="ingredient-card__number">03</div>
+        <div class="ingredient-card__title">Spaghetti de Orapro-nóbis</div>
+        <div class="ingredient-card__desc">Nossa especialidade. Massa funcional com orapro-nóbis — proteína vegetal de verdade, rica em nutrientes e com sabor.</div>
       </div>
     </div>
   </div>
@@ -197,8 +176,8 @@
 <section class="product-cta">
   <div class="container">
     <div class="product-cta__inner">
-      <span class="section-label reveal">Disponível na Lia Toss</span>
-      <h2 class="reveal reveal-delay-1">Você vai querer levar mais de um.</h2>
+      <span class="section-label reveal">Sempre disponível</span>
+      <h2 class="reveal reveal-delay-1">Disponível toda semana na Lia Toss.</h2>
       <p class="reveal reveal-delay-2">Porto da Lagoa, Florianópolis. Seg a Sáb.</p>
       <div class="product-cta__buttons reveal reveal-delay-3">
         <a href="https://wa.me/5548996890089" class="btn btn--gold" target="_blank" rel="noopener">Perguntar disponibilidade</a>
@@ -213,12 +192,12 @@
     <h2>Outros produtos da linha própria</h2>
     <div class="other-products__grid">
       <a href="massas-congeladas.html" class="other-card"><span class="other-card__icon"><svg class="emoji-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14h16M4 14a8 8 0 0 1 16 0M5 14l1 4a2 2 0 0 0 2 1.5h8a2 2 0 0 0 2-1.5l1-4"/><path d="M9 7c0-1.5 1-2.5 2-1.5M13 6c.5-1.5 1.5-1.5 2 0M11 5c0-1 1-1.5 1.5-.5"/></svg></span><span class="other-card__name">Massas Congeladas</span></a>
-      <a href="homus.html" class="other-card"><span class="other-card__icon"><svg class="emoji-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h18a9 9 0 0 1-18 0Z"/><path d="M14 4l5 4-3 2"/><path d="M3 12h18"/></svg></span><span class="other-card__name">Homus</span></a>
       <a href="bone-broth.html" class="other-card"><span class="other-card__icon"><svg class="emoji-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11h16v3a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5v-3Z"/><path d="M2 11h20"/><path d="M8 8c0-1.5 1-2 1-3.5M12 8c0-1.5 1-2 1-3.5M16 8c0-1.5 1-2 1-3.5"/></svg></span><span class="other-card__name">Bone Broth</span></a>
       <a href="quiches.html" class="other-card"><span class="other-card__icon"><svg class="emoji-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 13h16l-1.5 6a2 2 0 0 1-2 1.5H7.5a2 2 0 0 1-2-1.5L4 13Z"/><path d="M4 13a8 8 0 0 1 16 0"/><path d="M9 16h.01M12 17h.01M15 16h.01"/></svg></span><span class="other-card__name">Quiches Artesanais</span></a>
+      <a href="tortas.html" class="other-card"><span class="other-card__icon"><svg class="emoji-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 13h16l-1.5 6a2 2 0 0 1-2 1.5H7.5a2 2 0 0 1-2-1.5L4 13Z"/><path d="M4 13a8 8 0 0 1 16 0"/><path d="M9 16h.01M12 17h.01M15 16h.01"/></svg></span><span class="other-card__name">Tortas Artesanais</span></a>
       <a href="pratos-congelados.html" class="other-card"><span class="other-card__icon"><svg class="emoji-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 3 7v10l9 5 9-5V7Z"/><path d="m3 7 9 5 9-5M12 12v10"/></svg></span><span class="other-card__name">Pratos Congelados</span></a>
       <a href="pastas-molhos.html" class="other-card"><span class="other-card__icon"><svg class="emoji-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="14" rx="6" ry="7"/><path d="M9 9c0-3 3-4 5-3"/></svg></span><span class="other-card__name">Pastas & Molhos</span></a>
-      <a href="tortas.html" class="other-card"><span class="other-card__icon"><svg class="emoji-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 13h16l-1.5 6a2 2 0 0 1-2 1.5H7.5a2 2 0 0 1-2-1.5L4 13Z"/><path d="M4 13a8 8 0 0 1 16 0"/><path d="M9 16h.01M12 17h.01M15 16h.01"/></svg></span><span class="other-card__name">Tortas Artesanais</span></a>
+      <a href="sobremesas.html" class="other-card"><span class="other-card__icon"><svg class="emoji-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="9" cy="10" r="1"/><circle cx="14" cy="13" r="1"/><circle cx="11" cy="15" r="0.6"/><circle cx="15" cy="9" r="0.6"/></svg></span><span class="other-card__name">Sobremesas</span></a>
     </div>
   </div>
 </section>
@@ -228,7 +207,7 @@
     <div class="footer__top">
       <div class="footer__brand">
         <img src="../images/logo-lia-toss.webp" alt="Lia Toss Emporium Orgânico" width="120" height="120">
-        <p class="footer__brand-desc">O único Emporium de Florianópolis que fabrica a própria linha de produtos orgânicos. Feito à mão. Rastreável. Certificado. Desde 2013.</p>
+        <p class="footer__brand-desc">Emporium orgânico certificado BDSU com linha própria artesanal. 19 anos com orgânicos, 13 anos em Porto da Lagoa.</p>
       </div>
       <div class="footer__col">
         <h4 class="footer__col-title">Linha Própria</h4>
@@ -254,7 +233,7 @@
       </div>
     </div>
     <div class="footer__bottom">
-      <p class="footer__copy">© 2025 Lia Toss — Emporium Orgânico Certificado. Todos os direitos reservados.</p>
+      <p class="footer__copy">© 2026 Lia Toss — Emporium Orgânico Certificado. Todos os direitos reservados.</p>
     </div>
   </div>
 </footer>
