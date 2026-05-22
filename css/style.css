@@ -995,6 +995,83 @@ p { font-size: clamp(0.9rem, 1.3vw, 1rem); line-height: 1.8; }
   color: var(--color-gold);
 }
 
+/* ─── BLOG PREVIEW ───────────────────────────────────────── */
+.blog-preview {
+  background: var(--color-cream-dark);
+}
+
+.blog-preview__header {
+  max-width: 760px;
+  margin-bottom: 48px;
+}
+
+.blog-preview__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 320px;
+  padding: 34px 30px;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  color: var(--color-primary);
+  transition: var(--transition);
+}
+
+.blog-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(196,154,54,0.55);
+  box-shadow: var(--shadow-md);
+}
+
+.blog-card__tag {
+  align-self: flex-start;
+  margin-bottom: 24px;
+  padding: 6px 12px;
+  background: rgba(196,154,54,0.1);
+  border: 1px solid rgba(196,154,54,0.22);
+  border-radius: 100px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+.blog-card__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 2.1vw, 1.75rem);
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+
+.blog-card__excerpt {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  line-height: 1.75;
+  margin-bottom: 28px;
+}
+
+.blog-card__link {
+  margin-top: auto;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+.blog-preview__footer {
+  margin-top: 36px;
+  text-align: center;
+}
+
 /* ─── FAQ ────────────────────────────────────────────────── */
 .faq {
   background: var(--color-cream);
@@ -1344,7 +1421,7 @@ p { font-size: clamp(0.9rem, 1.3vw, 1rem); line-height: 1.8; }
 }
 
 /* ═══════════════════════════════════════════════════════════
-   CERTIFICAÇÃO BDSU
+   CERTIFICAÇÃO ABDSul
 ═══════════════════════════════════════════════════════════ */
 .certificacao {
   background: var(--color-cream);
@@ -1373,6 +1450,12 @@ p { font-size: clamp(0.9rem, 1.3vw, 1rem); line-height: 1.8; }
   padding: 48px;
   text-align: center;
   box-shadow: var(--shadow-md);
+}
+.certificacao__logo {
+  display: block;
+  width: min(240px, 74%);
+  height: auto;
+  margin: 0 auto 28px;
 }
 .certificacao__seal {
   display: flex;
@@ -1571,6 +1654,12 @@ p { font-size: clamp(0.9rem, 1.3vw, 1rem); line-height: 1.8; }
   margin-bottom: 24px;
 }
 .institucional-hero__title em { color: var(--color-gold); font-style: italic; }
+.institucional-hero__logo {
+  display: block;
+  width: min(260px, 72%);
+  height: auto;
+  margin: 0 auto 24px;
+}
 .institucional-hero__lead {
   max-width: 680px;
   margin: 0 auto;
@@ -1616,11 +1705,57 @@ p { font-size: clamp(0.9rem, 1.3vw, 1rem); line-height: 1.8; }
   margin-bottom: 10px;
 }
 
+.blog-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.article-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 0 28px;
+}
+
+.article-meta span {
+  padding: 6px 12px;
+  background: rgba(196,154,54,0.1);
+  border: 1px solid rgba(196,154,54,0.22);
+  border-radius: 100px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+.article-callout {
+  margin: 34px 0;
+  padding: 28px 30px;
+  background: rgba(196,154,54,0.1);
+  border-left: 3px solid var(--color-gold);
+  border-radius: 0 8px 8px 0;
+}
+
+.article-callout p {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 2.4vw, 1.55rem);
+  line-height: 1.45;
+  color: var(--color-primary);
+}
+
 @media (max-width: 992px) {
+  .blog-preview__grid,
+  .blog-list { grid-template-columns: 1fr 1fr; }
   .certificacao__inner { grid-template-columns: 1fr; gap: 48px; }
   .sustentabilidade__grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 768px) {
+  .blog-preview__grid,
+  .blog-list { grid-template-columns: 1fr; }
+  .blog-card { min-height: auto; }
   .sustentabilidade__grid { grid-template-columns: 1fr; }
   .whatsapp-float { width: 54px; height: 54px; bottom: 16px; right: 16px; }
   .whatsapp-float svg { width: 24px; height: 24px; }
