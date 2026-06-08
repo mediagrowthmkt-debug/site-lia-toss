@@ -164,6 +164,8 @@ p { font-size: clamp(0.9rem, 1.3vw, 1rem); line-height: 1.8; }
   top: 0; left: 0; width: 100%;
   z-index: 1000;
   padding: 28px 0;
+  background: transparent;
+  box-shadow: none;
   transition: var(--transition);
 }
 
@@ -182,9 +184,18 @@ p { font-size: clamp(0.9rem, 1.3vw, 1rem); line-height: 1.8; }
   gap: 32px;
 }
 
+.nav__logo {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  min-width: 92px;
+}
+
 .nav__logo img {
-  height: 56px;
+  display: block;
+  height: 72px;
   width: auto;
+  object-fit: contain;
 }
 
 .nav__logo-text {
@@ -819,6 +830,43 @@ p { font-size: clamp(0.9rem, 1.3vw, 1rem); line-height: 1.8; }
   margin-bottom: 24px;
 }
 
+/* ─── MISSÃO E VALORES ───────────────────────────────────── */
+.mission-values {
+  background: var(--color-white);
+}
+
+.mission-values__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 56px;
+  align-items: start;
+}
+
+.mission-values__mission {
+  border-left: 3px solid var(--color-gold);
+  padding-left: 28px;
+}
+
+.mission-values__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.mission-values__grid span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 10px 16px;
+  border: 1px solid var(--color-border);
+  background: var(--color-cream);
+  color: var(--color-primary);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
 /* ─── SOCIAL PROOF ───────────────────────────────────────── */
 .proof {
   background: var(--color-cream-dark);
@@ -1148,6 +1196,32 @@ p { font-size: clamp(0.9rem, 1.3vw, 1rem); line-height: 1.8; }
   color: var(--color-primary);
 }
 
+/* ─── TRABALHE CONOSCO ───────────────────────────────────── */
+.work-with-us {
+  background: var(--color-white);
+}
+
+.work-with-us__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 48px;
+  align-items: center;
+  padding: 48px;
+  border: 1px solid var(--color-border);
+  background: var(--color-cream);
+}
+
+.work-with-us__content p {
+  max-width: 680px;
+  margin-top: 18px;
+  color: var(--color-text-muted);
+}
+
+.work-with-us__cta {
+  display: flex;
+  justify-content: flex-end;
+}
+
 /* ─── CTA FINAL ──────────────────────────────────────────── */
 .cta-final {
   background: var(--color-bg-dark);
@@ -1382,6 +1456,8 @@ p { font-size: clamp(0.9rem, 1.3vw, 1rem); line-height: 1.8; }
   .why__inner,
   .cta-final__inner,
   .faq__inner,
+  .mission-values__inner,
+  .work-with-us__inner,
   .proof__inner { grid-template-columns: 1fr; gap: 48px; }
 
   .about__top { grid-template-columns: 1fr; gap: 48px; }
@@ -1416,6 +1492,8 @@ p { font-size: clamp(0.9rem, 1.3vw, 1rem); line-height: 1.8; }
 
   .footer__top { grid-template-columns: 1fr; }
   .footer__bottom { flex-direction: column; text-align: center; }
+  .work-with-us__inner { padding: 32px 24px; }
+  .work-with-us__cta { justify-content: flex-start; }
 
   .about__pillars { grid-template-columns: 1fr; }
 }
