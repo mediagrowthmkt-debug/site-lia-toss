@@ -46,6 +46,15 @@ function initMobileMenu() {
 function initScrollReveal() {
   const els = document.querySelectorAll('.reveal');
   if (!els.length) return;
+  const revealVisibleNow = () => {
+    els.forEach(el => {
+      if (el.classList.contains('visible')) return;
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        el.classList.add('visible');
+      }
+    });
+  };
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => {
       if (e.isIntersecting) {
@@ -55,6 +64,8 @@ function initScrollReveal() {
     });
   }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
   els.forEach(el => observer.observe(el));
+  requestAnimationFrame(revealVisibleNow);
+  window.addEventListener('load', revealVisibleNow, { once: true });
 }
 
 function initFAQ() {

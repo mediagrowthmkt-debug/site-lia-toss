@@ -728,10 +728,24 @@ p { font-size: clamp(0.9rem, 1.3vw, 1rem); line-height: 1.8; }
   border: 1px solid var(--color-border);
   transition: var(--transition);
 }
+.product-card--photo {
+  padding-top: 16px;
+}
 .product-card:hover {
   border-color: var(--color-gold);
   box-shadow: var(--shadow-sm);
   transform: translateY(-2px);
+}
+.product-card__image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 2px;
+  margin-bottom: 18px;
+  background: var(--color-cream);
 }
 .product-card__icon {
   width: 36px;
@@ -774,15 +788,14 @@ p { font-size: clamp(0.9rem, 1.3vw, 1rem); line-height: 1.8; }
 
 .emporium__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
 }
 
 .emporium-item {
   display: flex;
-  gap: 14px;
-  align-items: flex-start;
-  padding: 20px;
+  flex-direction: column;
+  padding: 16px 24px 28px;
   background: var(--color-white);
   border: 1px solid var(--color-border);
   border-radius: 2px;
@@ -792,28 +805,57 @@ p { font-size: clamp(0.9rem, 1.3vw, 1rem); line-height: 1.8; }
   border-color: var(--color-gold);
 }
 .emporium-item__icon {
-  width: 26px;
-  height: 26px;
+  width: 36px;
+  height: 36px;
   flex-shrink: 0;
-  margin-top: 2px;
+  margin-bottom: 14px;
   color: var(--color-gold);
   display: inline-flex;
   align-items: center;
   justify-content: center;
 }
 .emporium-item__icon svg { width: 100%; height: 100%; display: block; }
+/* item COM foto: esconde o ícone pequeno, a foto grande manda */
+.emporium-item:has(.emporium-item__image) .emporium-item__icon {
+  display: none;
+}
+.emporium-item__image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 2px;
+  margin-bottom: 18px;
+  background: var(--color-cream);
+}
+/* item SEM foto ainda: o ícone vira um placeholder quadrado no lugar da foto */
+.emporium-item:not(:has(.emporium-item__image)) .emporium-item__icon {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  margin-bottom: 18px;
+  background: var(--color-cream);
+  border-radius: 2px;
+}
+.emporium-item:not(:has(.emporium-item__image)) .emporium-item__icon svg {
+  width: 30%;
+  height: 30%;
+  opacity: 0.6;
+}
 .emporium-item__name {
   font-family: var(--font-display);
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 500;
   color: var(--color-primary);
   display: block;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 .emporium-item__desc {
-  font-size: 0.78rem;
+  font-size: 0.83rem;
   color: var(--color-text-muted);
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 .products__footer {
@@ -1859,16 +1901,15 @@ p { font-size: clamp(0.9rem, 1.3vw, 1rem); line-height: 1.8; }
 .emporium-item--linked::after {
   content: '→';
   position: absolute;
-  right: 16px;
-  top: 50%;
-  transform: translateY(-50%);
+  right: 20px;
+  bottom: 22px;
   font-size: 1.1rem;
   color: var(--color-gold);
   transition: var(--transition);
   opacity: 0.6;
 }
 .emporium-item--linked:hover::after {
-  transform: translateY(-50%) translateX(4px);
+  transform: translateX(4px);
   opacity: 1;
 }
 .emporium-item__badge {
