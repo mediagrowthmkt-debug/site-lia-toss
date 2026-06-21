@@ -6,12 +6,12 @@
   <title>Carnes Orgânicas e Frutos do Mar. — Lia Toss Emporium Orgânico e Natural</title>
   <meta name="description" content="Possivelmente o único Emporium em Florianópolis com carnes orgânicas. Cortes premium, frango caipira, salmão selvagem do Alasca (distribuidor exclusivo em SC) e">
   <link rel="canonical" href="https://liatoss.com.br/produtos/emporium/carnes.html">
-  <link rel="icon" type="image/jpeg" href="../../images/favicon.jpg">
+  <link rel="icon" type="image/png" href="../../images/favicon.png?v=20260621">
 
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../css/style.css?v=20260612-emporium-grid">
+  <link rel="stylesheet" href="../../css/style.css?v=20260621-img-cover3">
 </head>
 <body>
 
@@ -59,6 +59,142 @@
       <p>Somos <strong>distribuidor exclusivo em Santa Catarina</strong> do salmão selvagem do Alasca (parceria com Stone Bone). Diferente do salmão de cativeiro: vive no oceano, alimenta-se naturalmente, tem perfil de gordura completamente diferente.</p>
       <h3><svg class="emoji-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12c3-5 8-7 13-7 3 0 5 1 5 7s-2 7-5 7c-5 0-10-2-13-7Z"/><path d="M3 12c-1 1-1 3 0 5M3 12c-1-1-1-3 0-5"/><circle cx="17" cy="11" r="0.8"/><path d="M9 9v6M13 9v6"/></svg> Tilápia & Frutos do Mar</h3>
       <p>Tilápia de criação responsável e mexilhão local — selecionados com o mesmo critério dos demais produtos do Emporium.</p>
+
+      <style>
+        .carnes-galeria { margin: 48px 0 8px; }
+        .carnes-galeria__titulo { font-family: var(--font-display); font-weight: 600; color: var(--color-primary); font-size: 1.55rem; margin: 0 0 6px; }
+        .carnes-galeria__intro { font-family: var(--font-body); color: var(--color-text-muted); font-size: .92rem; margin: 0 0 28px; max-width: 640px; }
+        .carnes-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 22px; }
+        .carne-card { background: var(--color-white); border: 1px solid var(--color-border); border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 6px 20px rgba(42,18,0,.06); transition: transform .25s ease, box-shadow .25s ease; }
+        .carne-card:hover { transform: translateY(-4px); box-shadow: 0 14px 32px rgba(42,18,0,.13); }
+        .carne-card__img { width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; object-position: center; display: block; background: var(--color-cream-dark); }
+        .carne-card figcaption { padding: 15px 18px 20px; display: flex; flex-direction: column; gap: 9px; }
+        .carne-card__selos { display: flex; flex-wrap: wrap; gap: 6px; min-height: 4px; }
+        .carne-chip { font-family: var(--font-body); font-size: .6rem; letter-spacing: .04em; text-transform: uppercase; font-weight: 600; padding: 3px 9px; border-radius: 999px; color: #2f7d32; background: rgba(47,125,50,.1); border: 1px solid rgba(47,125,50,.28); }
+        .carne-chip--gold { color: var(--color-gold); background: rgba(196,154,54,.12); border-color: rgba(196,154,54,.32); }
+        .carne-card__title { font-family: var(--font-display); font-size: 1.18rem; font-weight: 600; color: var(--color-primary); margin: 0; line-height: 1.22; }
+        .carne-card__meta { font-family: var(--font-body); font-size: .68rem; letter-spacing: .05em; text-transform: uppercase; color: var(--color-text-muted); margin: 0; }
+        .carne-card__desc { font-family: var(--font-body); font-size: .85rem; line-height: 1.55; color: var(--color-text); margin: 0; }
+        @media (max-width: 520px) { .carnes-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; } .carne-card figcaption { padding: 12px 13px 16px; } }
+      </style>
+
+      <div class="carnes-galeria">
+        <h3 class="carnes-galeria__titulo">Alguns destaques do nosso balcão</h3>
+        <p class="carnes-galeria__intro">Uma amostra das carnes, aves, suínos e frutos do mar que passam pela nossa curadoria. A disponibilidade varia conforme a estação e o que chega de cada produtor.</p>
+        <div class="carnes-grid">
+
+          <figure class="carne-card">
+            <img class="carne-card__img" src="../../images/produtos/emporium/carnes/angus-beef-steak-picanha.webp" alt="Steak de Picanha Angus Beef certificada" loading="lazy" width="562" height="703">
+            <figcaption>
+              <span class="carne-card__selos"><span class="carne-chip carne-chip--gold">Angus Certificada</span></span>
+              <h4 class="carne-card__title">Steak de Picanha Angus</h4>
+              <p class="carne-card__meta">Angus Beef · Bovino</p>
+              <p class="carne-card__desc">A estrela do churrasco. Picanha em steaks de gado Angus certificado, com o marmoreio característico da raça que garante maciez e um sabor marcante a cada fatia.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="carne-card">
+            <img class="carne-card__img" src="../../images/produtos/emporium/carnes/frumar-salmao-selvagem-alasca.webp" alt="Salmão Selvagem do Alasca Frumar" loading="lazy" width="562" height="703">
+            <figcaption>
+              <span class="carne-card__selos"><span class="carne-chip carne-chip--gold">Selvagem · Alasca</span></span>
+              <h4 class="carne-card__title">Salmão Selvagem do Alasca</h4>
+              <p class="carne-card__meta">Frumar · Peixe</p>
+              <p class="carne-card__desc">Pescado nas águas frias do Alasca, vive solto no oceano e se alimenta naturalmente — perfil de ômega-3 e gordura bem diferente do salmão de cativeiro. Distribuição exclusiva nossa em SC.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="carne-card">
+            <img class="carne-card__img" src="../../images/produtos/emporium/carnes/korin-file-peito-frango-organico.webp" alt="Filé de Peito de Frango Orgânico Korin" loading="lazy" width="562" height="703">
+            <figcaption>
+              <span class="carne-card__selos"><span class="carne-chip">Orgânico</span><span class="carne-chip carne-chip--gold">Certified Humane</span></span>
+              <h4 class="carne-card__title">Filé de Peito de Frango Orgânico</h4>
+              <p class="carne-card__meta">Korin · Frango · 600g</p>
+              <p class="carne-card__desc">Frango orgânico criado sem antibióticos nem coccidiostáticos, com bem-estar animal Certified Humane. Peito sem osso, magro e versátil para o dia a dia.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="carne-card">
+            <img class="carne-card__img" src="../../images/produtos/emporium/carnes/seara-coxinha-asa-frango-organico.webp" alt="Coxinha da Asa de Frango Orgânico Seara" loading="lazy" width="562" height="703">
+            <figcaption>
+              <span class="carne-card__selos"><span class="carne-chip">Orgânico</span><span class="carne-chip carne-chip--gold">Certified Humane</span></span>
+              <h4 class="carne-card__title">Coxinha da Asa de Frango Orgânico</h4>
+              <p class="carne-card__meta">Seara Orgânico · Frango · 600g</p>
+              <p class="carne-card__desc">Coxinhas da asa de frango orgânico, de criação com bem-estar certificado. Douram por fora e ficam suculentas por dentro — prontas para o forno ou a grelha.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="carne-card">
+            <img class="carne-card__img" src="../../images/produtos/emporium/carnes/bio-carnes-carne-moida-organica.webp" alt="Carne Moída Orgânica Bio Carnes" loading="lazy" width="562" height="703">
+            <figcaption>
+              <span class="carne-card__selos"><span class="carne-chip">Orgânico Brasil</span></span>
+              <h4 class="carne-card__title">Carne Moída Orgânica</h4>
+              <p class="carne-card__meta">Bio Carnes · Bovino · 400g</p>
+              <p class="carne-card__desc">Carne bovina moída de gado criado em pastagem orgânica certificada, sem hormônios. Uma base limpa e saborosa para molhos, hambúrgueres caseiros e recheios.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="carne-card">
+            <img class="carne-card__img" src="../../images/produtos/emporium/carnes/bio-carnes-patinho-organico.webp" alt="Patinho Orgânico Bio Carnes" loading="lazy" width="562" height="703">
+            <figcaption>
+              <span class="carne-card__selos"><span class="carne-chip">Orgânico Brasil</span></span>
+              <h4 class="carne-card__title">Patinho Orgânico</h4>
+              <p class="carne-card__meta">Bio Carnes · Bovino</p>
+              <p class="carne-card__desc">Corte magro do traseiro bovino, de animais criados em sistema orgânico certificado. Versátil de verdade: rende bifes, ensopados, escalopes e a melhor moída da casa.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="carne-card">
+            <img class="carne-card__img" src="../../images/produtos/emporium/carnes/duroc-bife-lombo-suino.webp" alt="Bife de Lombo Suíno Duroc Pork" loading="lazy" width="562" height="703">
+            <figcaption>
+              <span class="carne-card__selos"></span>
+              <h4 class="carne-card__title">Bife de Lombo Suíno Duroc</h4>
+              <p class="carne-card__meta">Duroc Pork · Suíno · 300g</p>
+              <p class="carne-card__desc">A raça Duroc é reconhecida pelo marmoreio e pela maciez. Bifes de lombo suculentos, de cor avermelhada e sabor intenso — pegam bem na frigideira e na grelha.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="carne-card">
+            <img class="carne-card__img" src="../../images/produtos/emporium/carnes/duroc-file-mignon-suino.webp" alt="Filé Mignon Suíno Duroc Linha Churrasco" loading="lazy" width="562" height="703">
+            <figcaption>
+              <span class="carne-card__selos"></span>
+              <h4 class="carne-card__title">Filé Mignon Suíno Duroc</h4>
+              <p class="carne-card__meta">Duroc Pork · Linha Churrasco · Suíno</p>
+              <p class="carne-card__desc">O corte mais macio do suíno Duroc, da linha churrasco. Magro, delicado e de cocção rápida — fica ótimo grelhado inteiro ou em medalhões.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="carne-card">
+            <img class="carne-card__img" src="../../images/produtos/emporium/carnes/linguica-toscana-grill.webp" alt="Linguiça Toscana Grill suína" loading="lazy" width="562" height="703">
+            <figcaption>
+              <span class="carne-card__selos"></span>
+              <h4 class="carne-card__title">Linguiça Toscana Grill</h4>
+              <p class="carne-card__meta">Suíno · 200g</p>
+              <p class="carne-card__desc">Linguiça toscana de carne suína temperada no ponto, pensada para a churrasqueira. Suculenta e levemente apimentada — não pode faltar no espetinho de fim de semana.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="carne-card">
+            <img class="carne-card__img" src="../../images/produtos/emporium/carnes/damm-salmao-defumado.webp" alt="Salmão Defumado em fatias DAMM" loading="lazy" width="562" height="703">
+            <figcaption>
+              <span class="carne-card__selos"></span>
+              <h4 class="carne-card__title">Salmão Defumado em Fatias</h4>
+              <p class="carne-card__meta">DAMM · Peixe · 200g</p>
+              <p class="carne-card__desc">Fatias de salmão defumado a frio, prontas para servir. Textura sedosa e sabor delicado — perfeito em torradas, canapés, bagels e tábuas de entrada.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="carne-card">
+            <img class="carne-card__img" src="../../images/produtos/emporium/carnes/damm-sashimi-salmao.webp" alt="Sashimi de Salmão DAMM" loading="lazy" width="562" height="703">
+            <figcaption>
+              <span class="carne-card__selos"></span>
+              <h4 class="carne-card__title">Sashimi de Salmão</h4>
+              <p class="carne-card__meta">DAMM · Peixe · 150g</p>
+              <p class="carne-card__desc">Salmão já fatiado no padrão sashimi, com corte limpo e frescor preservado. Pratos japoneses montados em casa, sem trabalho e sem perder a qualidade.</p>
+            </figcaption>
+          </figure>
+
+        </div>
+      </div>
 
       <div style="margin-top: 40px; text-align: center;">
         <a href="../../index.html#produtos" class="btn btn--gold">Voltar para Nossos Produtos</a>

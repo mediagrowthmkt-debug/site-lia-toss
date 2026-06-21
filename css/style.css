@@ -830,6 +830,24 @@ p { font-size: clamp(0.9rem, 1.3vw, 1rem); line-height: 1.8; }
   margin-bottom: 18px;
   background: var(--color-cream);
 }
+/* Foto de produto (hero + story): a imagem cobre o quadro inteiro (object-fit cover, sem amassar);
+   o ícone SVG de fallback fica atrás e só aparece quando a imagem falha. Especificidade maior
+   que o <style> inline das páginas de produto, então vale em todas de uma vez. */
+.product-hero .product-hero__visual,
+.story .story__image,
+.praticidade .praticidade__visual,
+.confeitaria .confeitaria__visual { position: relative; }
+.product-hero .product-hero__visual img,
+.story .story__image img,
+.praticidade .praticidade__visual img,
+.confeitaria .confeitaria__visual img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 /* item SEM foto ainda: o ícone vira um placeholder quadrado no lugar da foto */
 .emporium-item:not(:has(.emporium-item__image)) .emporium-item__icon {
   width: 100%;

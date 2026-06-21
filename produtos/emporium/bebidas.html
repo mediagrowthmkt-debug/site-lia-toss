@@ -6,12 +6,12 @@
   <title>Bebidas do Emporium. — Lia Toss Emporium Orgânico e Natural</title>
   <meta name="description" content="Kombucha, sucos naturais, bebidas vegetais, vinhos orgânicos selecionados, água mineral e mais. Cada bebida tem origem checada e curadoria honesta.">
   <link rel="canonical" href="https://liatoss.com.br/produtos/emporium/bebidas.html">
-  <link rel="icon" type="image/jpeg" href="../../images/favicon.jpg">
+  <link rel="icon" type="image/png" href="../../images/favicon.png?v=20260621">
 
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../css/style.css?v=20260612-emporium-grid">
+  <link rel="stylesheet" href="../../css/style.css?v=20260621-img-cover3">
 </head>
 <body>
 
@@ -59,6 +59,152 @@
       <p>Sucos prensados a frio, bebidas vegetais (leites de aveia, amêndoa, coco) e opções funcionais sem açúcar refinado.</p>
       <h3><svg class="emoji-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s7 7 7 12a7 7 0 0 1-14 0c0-5 7-12 7-12Z"/></svg> Água Mineral & Águas Funcionais</h3>
       <p>Águas minerais selecionadas e opções funcionais com adição de eletrólitos naturais ou ervas.</p>
+
+      <style>
+        .bebidas-galeria { margin: 48px 0 8px; }
+        .bebidas-galeria__titulo { font-family: var(--font-display); font-weight: 600; color: var(--color-primary); font-size: 1.55rem; margin: 0 0 6px; }
+        .bebidas-galeria__intro { font-family: var(--font-body); color: var(--color-text-muted); font-size: .92rem; margin: 0 0 28px; max-width: 640px; }
+        .bebidas-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 22px; }
+        .bebida-card { background: var(--color-white); border: 1px solid var(--color-border); border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 6px 20px rgba(42,18,0,.06); transition: transform .25s ease, box-shadow .25s ease; }
+        .bebida-card:hover { transform: translateY(-4px); box-shadow: 0 14px 32px rgba(42,18,0,.13); }
+        .bebida-card__img { width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; object-position: center; display: block; background: var(--color-cream-dark); }
+        .bebida-card figcaption { padding: 15px 18px 20px; display: flex; flex-direction: column; gap: 9px; }
+        .bebida-card__selos { display: flex; flex-wrap: wrap; gap: 6px; min-height: 4px; }
+        .bebida-chip { font-family: var(--font-body); font-size: .6rem; letter-spacing: .04em; text-transform: uppercase; font-weight: 600; padding: 3px 9px; border-radius: 999px; color: #2f7d32; background: rgba(47,125,50,.1); border: 1px solid rgba(47,125,50,.28); }
+        .bebida-chip--gold { color: var(--color-gold); background: rgba(196,154,54,.12); border-color: rgba(196,154,54,.32); }
+        .bebida-card__title { font-family: var(--font-display); font-size: 1.18rem; font-weight: 600; color: var(--color-primary); margin: 0; line-height: 1.22; }
+        .bebida-card__meta { font-family: var(--font-body); font-size: .68rem; letter-spacing: .05em; text-transform: uppercase; color: var(--color-text-muted); margin: 0; }
+        .bebida-card__desc { font-family: var(--font-body); font-size: .85rem; line-height: 1.55; color: var(--color-text); margin: 0; }
+        @media (max-width: 520px) { .bebidas-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; } .bebida-card figcaption { padding: 12px 13px 16px; } }
+      </style>
+
+      <div class="bebidas-galeria">
+        <h3 class="bebidas-galeria__titulo">Alguns destaques da nossa adega de bebidas</h3>
+        <p class="bebidas-galeria__intro">Uma amostra das kombuchas, sucos, energéticos naturais e funcionais que passam pela nossa curadoria. A disponibilidade varia conforme a estação e o que chega de cada produtor.</p>
+        <div class="bebidas-grid">
+
+          <figure class="bebida-card">
+            <img class="bebida-card__img" src="../../images/produtos/emporium/bebidas/benjamim-kombucha-frutas-vermelhas.webp" alt="Kombucha Benjamim de frutas vermelhas orgânica" loading="lazy" width="562" height="562">
+            <figcaption>
+              <span class="bebida-card__selos"><span class="bebida-chip">Orgânico Brasil</span></span>
+              <h4 class="bebida-card__title">Kombucha Frutas Vermelhas</h4>
+              <p class="bebida-card__meta">Benjamim · Kombucha · 1L</p>
+              <p class="bebida-card__desc">Kombucha orgânica de chá fermentado com cultura viva e frutas vermelhas de verdade. Sem conservantes, sem adoçante artificial e sem álcool — refrescante e boa para a digestão.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="bebida-card">
+            <img class="bebida-card__img" src="../../images/produtos/emporium/bebidas/aina-kombucha-erva-mate-hibisco.webp" alt="Aina Kombucha de erva-mate, hibisco e capim-santo" loading="lazy" width="562" height="562">
+            <figcaption>
+              <span class="bebida-card__selos"><span class="bebida-chip">Orgânico Brasil</span></span>
+              <h4 class="bebida-card__title">Kombucha Erva-Mate, Hibisco & Capim-Santo</h4>
+              <p class="bebida-card__meta">Aina · Kombucha · 355ml</p>
+              <p class="bebida-card__desc">Kombucha orgânica de cepas vivas num blend de erva-mate, hibisco e capim-santo. Digestiva, refrescante e sem álcool — fermentação natural de verdade.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="bebida-card">
+            <img class="bebida-card__img" src="../../images/produtos/emporium/bebidas/ayo-kombucha-uva-branca-gengibre.webp" alt="AYO Kombucha de uva branca e gengibre orgânica" loading="lazy" width="562" height="562">
+            <figcaption>
+              <span class="bebida-card__selos"><span class="bebida-chip">Orgânica</span></span>
+              <h4 class="bebida-card__title">Kombucha Uva Branca & Gengibre</h4>
+              <p class="bebida-card__meta">AYO · Kombucha · 1L</p>
+              <p class="bebida-card__desc">A doçura da uva branca com o toque picante e aromático do gengibre, em kombucha orgânica de fermentação viva. Leve, borbulhante e funcional.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="bebida-card">
+            <img class="bebida-card__img" src="../../images/produtos/emporium/bebidas/high-hard-kombucha-rose.webp" alt="HIGH Hard Kombucha Rosé alcoólica orgânica" loading="lazy" width="562" height="562">
+            <figcaption>
+              <span class="bebida-card__selos"><span class="bebida-chip">Orgânica</span><span class="bebida-chip bebida-chip--gold">Hard · 6,2%</span></span>
+              <h4 class="bebida-card__title">Hard Kombucha Rosé</h4>
+              <p class="bebida-card__meta">HIGH · Kombucha alcoólica · 350ml</p>
+              <p class="bebida-card__desc">A primeira hard kombucha do Brasil — e a primeira rosé do mundo. Morango, amora e uva em fermentação natural e orgânica, levemente alcoólica. Carbono neutro.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="bebida-card">
+            <img class="bebida-card__img" src="../../images/produtos/emporium/bebidas/campo-largo-suco-uva.webp" alt="Campo Largo suco de uva integral 100% sem açúcar" loading="lazy" width="562" height="562">
+            <figcaption>
+              <span class="bebida-card__selos"><span class="bebida-chip bebida-chip--gold">100% Suco · Sem Açúcar</span></span>
+              <h4 class="bebida-card__title">Suco de Uva Integral</h4>
+              <p class="bebida-card__meta">Campo Largo · Suco integral · 900ml</p>
+              <p class="bebida-card__desc">100% suco de uva, só a fruta — sem água, sem açúcar e sem conservante. Rico em antioxidantes naturais. O clássico integral que não pode faltar na geladeira.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="bebida-card">
+            <img class="bebida-card__img" src="../../images/produtos/emporium/bebidas/novo-citrus-suco-tangerina-organico.webp" alt="Novo Citrus suco de tangerina integral orgânico" loading="lazy" width="562" height="562">
+            <figcaption>
+              <span class="bebida-card__selos"><span class="bebida-chip">Orgânico</span></span>
+              <h4 class="bebida-card__title">Suco de Tangerina Integral Orgânico</h4>
+              <p class="bebida-card__meta">Novo Citrus · Suco integral · 1L</p>
+              <p class="bebida-card__desc">Feito só de tangerina de cultivo orgânico — sem água, sem açúcar e sem conservante. Suco 100% integral que preserva as características da fruta.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="bebida-card">
+            <img class="bebida-card__img" src="../../images/produtos/emporium/bebidas/mitto-suco-caju-maca.webp" alt="Mitto suco integral de caju e maçã" loading="lazy" width="562" height="562">
+            <figcaption>
+              <span class="bebida-card__selos"><span class="bebida-chip bebida-chip--gold">Integral</span></span>
+              <h4 class="bebida-card__title">Suco Integral de Caju & Maçã</h4>
+              <p class="bebida-card__meta">Mitto · Suco integral</p>
+              <p class="bebida-card__desc">Suco integral de caju selecionado do Rio Grande do Norte com maçã — até 2kg de fruta por litro. 100% natural, sem açúcar e sem conservantes.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="bebida-card">
+            <img class="bebida-card__img" src="../../images/produtos/emporium/bebidas/hf-carraro-polpa-butia.webp" alt="HF Carraro polpa de butiá certificada Ecovida" loading="lazy" width="562" height="562">
+            <figcaption>
+              <span class="bebida-card__selos"><span class="bebida-chip">Ecovida</span></span>
+              <h4 class="bebida-card__title">Polpa de Butiá</h4>
+              <p class="bebida-card__meta">HF Carraro · Polpa de fruta · 550g</p>
+              <p class="bebida-card__desc">Polpa do butiá, fruta nativa do litoral sul, de sabor exótico e aromático. Produção agroflorestal certificada pela Rede Ecovida — rica em vitamina C e carotenoides.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="bebida-card">
+            <img class="bebida-card__img" src="../../images/produtos/emporium/bebidas/wewi-energetico-organico.webp" alt="Wewi energético orgânico original" loading="lazy" width="562" height="562">
+            <figcaption>
+              <span class="bebida-card__selos"><span class="bebida-chip">Orgânico Brasil</span><span class="bebida-chip bebida-chip--gold">Vegano</span></span>
+              <h4 class="bebida-card__title">Energético Orgânico Original</h4>
+              <p class="bebida-card__meta">Wewi · Energético · 269ml</p>
+              <p class="bebida-card__desc">O primeiro energético orgânico do Brasil — extrato de guaraná orgânico e 81mg de cafeína natural por lata. Sem taurina, sem sódio, sem corante e sem conservante.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="bebida-card">
+            <img class="bebida-card__img" src="../../images/produtos/emporium/bebidas/tum-energetico-frutas-vermelhas.webp" alt="Tûm energético natural de frutas vermelhas vegano" loading="lazy" width="562" height="562">
+            <figcaption>
+              <span class="bebida-card__selos"><span class="bebida-chip bebida-chip--gold">Vegano · Sem Taurina</span></span>
+              <h4 class="bebida-card__title">Energético Natural Frutas Vermelhas</h4>
+              <p class="bebida-card__meta">Tûm · Energético · 275ml</p>
+              <p class="bebida-card__desc">Energia natural sem taurina: 85mg de cafeína do café verde, suco de frutas vermelhas e menos de 60 calorias. Vegano, sem corante e sem açúcar refinado.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="bebida-card">
+            <img class="bebida-card__img" src="../../images/produtos/emporium/bebidas/plant-power-jungle-maracuja.webp" alt="Plant Power Jungle Low Carb sabor maracujá" loading="lazy" width="562" height="562">
+            <figcaption>
+              <span class="bebida-card__selos"><span class="bebida-chip bebida-chip--gold">Low Carb · Sem Glúten</span></span>
+              <h4 class="bebida-card__title">Jungle Low Carb Maracujá</h4>
+              <p class="bebida-card__meta">Plant Power · Isotônico · 500ml</p>
+              <p class="bebida-card__desc">Hidratação inteligente: suco de fruta com água de coco e eletrólitos naturais, sabor maracujá. Só 24 calorias, adoçado com stevia, fonte de vitamina C e magnésio.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="bebida-card">
+            <img class="bebida-card__img" src="../../images/produtos/emporium/bebidas/moving-hydro-protein-tangerina.webp" alt="Moving Hydro Protein bebida proteica de tangerina" loading="lazy" width="562" height="562">
+            <figcaption>
+              <span class="bebida-card__selos"><span class="bebida-chip bebida-chip--gold">20g Proteína · Zero Açúcar</span></span>
+              <h4 class="bebida-card__title">Hydro Protein Tangerina</h4>
+              <p class="bebida-card__meta">Moving · Bebida proteica · 500ml</p>
+              <p class="bebida-card__desc">Isotônico funcional com 20g de colágeno hidrolisado e blend de eletrólitos numa garrafa só. Hidrata, repõe e ajuda na recuperação — sabor tangerina, ~90 kcal.</p>
+            </figcaption>
+          </figure>
+
+        </div>
+      </div>
 
       <div style="margin-top: 40px; text-align: center;">
         <a href="../../index.html#produtos" class="btn btn--gold">Voltar para Nossos Produtos</a>
